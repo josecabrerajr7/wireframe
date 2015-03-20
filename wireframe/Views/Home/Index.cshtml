@@ -1,0 +1,322 @@
+﻿@model wireframe.Models.IndexModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<a name="Home"></a>
+<div class="row">
+    <div class="col-md-12">
+        <img src="~/img/home-bg.png" class="img-responsive home-bg" alt="image1" />
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <a name="AboutUs"></a>
+        <h2 class="head">About Us</h2>
+    </div>
+
+    <p class="about-paragraph">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
+
+    <div class="col-md-12">
+        <img src="~/img/ipad-device.png" class="img-responsive ipad-img" alt="iPad Device" />
+    </div>
+
+    <p class="about-paragraph-two">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+    </p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="container-team">
+            <div class="col-md-12">
+                <a name="Team"></a>
+                <h2 class="team-head">Our Team</h2>
+            </div>
+            <div class="col-md--12">
+                <p class="team-paragraph">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+            <div class="row">
+                <div class="hidden-sm col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="col-sm-12">
+                        <img src="~/img/team-1.png" class="img-responsive team-img" alt="Team 1" />
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="name">Name</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="name-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+
+                    <div class="col-md-12">
+                        @Html.ActionLink(" ", "", null, new { @class = "btn btn-default button" })
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-sm-12">
+                        <img src="~/img/team-2.png" class="img-responsive team-img" alt="Team 2" />
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="name">Name</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="name-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ActionLink(" ", "", null, new { @class = "btn btn-default button" })
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="col-sm-12">
+                        <img src="~/img/team-3.png" class="img-responsive team-img" alt="Team 3" />
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="name">Name</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="name-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ActionLink(" ", "", null, new { @class = "btn btn-default button" })
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="col-sm-12">
+                        <img src="~/img/team-4.png" class="img-responsive team-img" alt="Team 4" />
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="name">Name</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="name-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ActionLink(" ", "", null, new { @class = "btn btn-default button" })
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Coding for portfolio section-->
+<div class="row" name="portfolio">
+    <div class="col-md-12">
+        <a name="Portfolio"></a>
+        <h2 class="team-head">Portfolio</h2>
+    </div>
+    <p class="about-paragraph">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+            <ul id="filters" class="clearfix">
+                <li><a href="#portfolio" class="filter active" data-filter="all">All</a></li>
+                <li><a href="#portfolio" class="filter" data-filter=".design">Design</a></li>
+                <li><a href="#portfolio" class="filter" data-filter=".identity">Identity</a></li>
+                <li><a href="#portfolio" class="filter" data-filter=".photography">Photography</a></li>
+                <li><a href="#portfolio" class="filter" data-filter=".illustration">Illustration</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="portfoliolist">
+            <div class="mix design col-md-4" data-cat"design">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Design</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix photography col-md-4" data-cat="photography">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image2" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Photography</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix illustration col-md-4" data-cat="illustration">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image3" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Illustration</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix design col-md-4" data-cat="design">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image4" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Design</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix identity col-md-4" data-cat="identity">
+                <div class="mix-wrapper">
+                    <img src="~/img/id.png" class="img-responsive" alt="image5" />
+                    <div class="label">
+                        <div class="label-text">
+                            
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix photography col-md-4" data-cat="photography">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image6" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Photography</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix illustration col-md-4" data-cat="illustration">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image6" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Illustration</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix design col-md-4" data-cat="design">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image7" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Design</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix photography col-md-4" data-cat="photography">
+                <div class="mix-wrapper">
+                    <img src="~/img/image.png" class="img-responsive" alt="image8" />
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">Photography</span>
+                            <span class="text-category">
+                                Lorem ipsum dolor sit amet, consec tetuer
+                                adipiscing elit.
+                            </span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="container-contact">
+            <div class="col-md-12">
+                <a name="Contact"></a>
+                <h2 class="team-head">Contact</h2>
+            </div>
+            <p class="about-paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <div class="row">
+                <div class="col-md-12">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.TextBoxFor(model => model.Name, new { placeholder = " Enter your Name" })
+                        @Html.ValidationMessage("Name")<br />
+
+                        @Html.TextBoxFor(model => model.Address, new { placeholder = " Enter your Address" })
+                        @Html.ValidationMessage("Address")<br />
+
+                        @Html.TextBoxFor(model => model.City, new { placeholder = " Enter your City" })
+                        @Html.ValidationMessage("City")<br />
+
+                        @Html.TextBoxFor(model => model.Email, new { placeholder = " Enter your Email Address" })
+                        @Html.ValidationMessage("Email")<br />
+
+                        @Html.TextAreaFor(model => model.Message, new { placeholder = " Enter your Email Message" })
+                        @Html.ValidationMessage("Message")<br />
+
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
